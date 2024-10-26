@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRAVEL TIPS</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            background: #f0f0f0;
+            color: #333;
+        }
+
+        header {
+            background: #0077be;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            width: 100%;
+            font-family: sans-serif;
+            font-size: 25px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0; 
+        } 
+
+        nav ul li {
+            display: inline-block; 
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease-in;
+        }
+
+        nav ul li a:hover {
+            color: #250202ce; 
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        section {
+            width: 100%;
+            padding: 50px 20px;
+            text-align: center;
+            background: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            font-weight: 200;
+            font-family: 'Courier New', Courier, monospace;
+            text-transform: capitalize;
+            font-size: 150%;
+        }
+
+        section ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        section li {
+            margin: 40px 0;
+        }
+
+        .text-above {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .img-container {
+            display: inline-block;
+        }
+
+        .img-container img {
+            width: 1200px;
+            height: 600px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 0px 0;
+            background: #0077be;
+            color: #fff;
+            width: 100%;
+            font-size: 70%;
+        }
+
+        @media (max-width: 768px) {
+            header, footer {
+                padding: 15px;
+            }
+
+            section {
+                padding: 30px 10px;
+            }
+
+            nav ul li {
+                margin: 0 10px;
+            }
+
+            .img-container img {
+                width: 100%;
+                height: auto;
+            }
+
+            .text-above {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            section {
+                padding: 20px 5px;
+            }
+
+            .img-container img {
+                width: 100%;
+                height: auto;
+            }
+
+            .text-above {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PANALACAN ISLAND SANDBAR</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="destination.html">Destination</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="traveltips.html">Travel-Tips</a></li>
+                <li><a href="photos.html">Photos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="travel-tips">
+            <h2>Travel Tips</h2>
+            <ul>
+                <li>
+                    <div class="text-above">Best time to visit: November to April</div>
+                    <div class="img-container">
+                        <img src="BTV.png" alt="Best time to visit">
+                    </div>
+                </li>
+                <li>
+                    <div class="text-above">Bring sunscreen and swim gear</div>
+                    <div class="img-container">
+                        <img src="BSWG.png" alt="Bring sunscreen">
+                    </div>
+                </li>
+                <li>
+                    <div class="text-above">Stay hydrated and bring snacks</div>
+                    <div class="img-container">
+                        <img src="SH.png" alt="Stay hydrated">
+                    </div>
+                </li>
+                <li>
+                    <div class="text-above">Respect local wildlife and environment</div>
+                    <div class="img-container">
+                        <img src="RWLE.png" alt="Respect wildlife">
+                    </div>
+                </li>
+                <li>
+                    <div class="text-above">Check local weather conditions before your trip</div>
+                    <div class="img-container">
+                        <img src="CW.png" alt="Check weather">
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Panacalan Island Sandbar Travel Blog. All rights reserved.</p>
+    </footer>
+</body>
+</html>

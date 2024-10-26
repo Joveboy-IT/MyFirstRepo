@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHOTOS</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            background: #f0f0f0;
+            color: #333;
+        }
+
+        header {
+            background: #0077be;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            width: 100%;
+            font-family: sans-serif;
+            font-size: 25px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0; 
+        } 
+
+        nav ul li {
+            display: inline-block; 
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease-in;
+            letter-spacing: 0; 
+        }
+
+        nav ul li a:hover {
+            color: #250202ce; 
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            flex-direction: column; /* Allow vertical stacking of sections */
+        }
+
+        section {
+            width: 100%;
+            padding: 20px; /* Reduced padding for better image display */
+            text-align: center;
+            background: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            position: relative; 
+            font-weight: 200;
+            font-family: 'Courier New', Courier, monospace;
+            text-transform: capitalize;
+            font-size: 150%;
+        }
+
+        .activity-gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; /* Allow images to wrap onto the next line */
+        }
+
+        /* Set a fixed size for all images */
+        section img {
+            width: 800px; /* Set fixed width */
+            height: 500px; /* Set fixed height */
+            margin: 10px; /* Space between images */
+            object-fit: cover; /* Ensure images keep their aspect ratio */
+        }
+
+        footer {
+            text-align: center;
+            padding: 0px 0;
+            background: #0077be;
+            color: #fff;
+            width: 100%;
+            position: relative;
+            font-size: 70%;
+        }
+
+        @media (max-width: 768px) {
+            header, footer {
+                padding: 15px;
+            }
+
+            section {
+                padding: 15px;
+            }
+
+            section img {
+                width: calc(100% - 20px); /* Full width on smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            section {
+                padding: 20px 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PANALACAN ISLAND SANDBAR</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="destination.html">Destination</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="traveltips.html">Travel-Tips</a></li>
+                <li><a href="photos.html">Photos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="photos">
+            <h2>PHOTOS</h2>
+            <div class="activity-gallery">
+                <img src="home1.png" alt="Panacalan Island Image">
+                <img src="home2.png" alt="Panacalan Island Image">
+                <img src="WS.png" alt="Watching Sunset">
+                <img src="BP.png" alt="Bonfire Party">
+                <img src="LNBV.png" alt="Late Night Beach Volleyball">
+                <img src="SR.png" alt="Sunbathing and Relaxing">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Panacalan Island Sandbar Travel Blog. All rights reserved.</p>
+    </footer>
+</body>
+</html>
