@@ -11,13 +11,14 @@
             height: 100%;
             width: 100%;
             font-family: 'Roboto', sans-serif;
+            padding-bottom: 0px;
+            margin-bottom: 0px;
         }
 
         body {
-            display: flex;
-            flex-direction: column;
-            background: #f0f0f0;
+            font-family: 'Roboto', sans-serif;
             color: #333;
+            line-height: 1.3;
         }
 
         header {
@@ -28,7 +29,8 @@
             text-align: center;
             width: 100%;
             font-family: sans-serif;
-            font-size: 35px;
+            font-size: 32px; 
+            font-weight: 700;
         }
 
         nav ul {
@@ -45,12 +47,13 @@
         nav ul li a {
             color: #fff;
             text-decoration: none;
-            transition: color 0.3s ease-in;
-            letter-spacing: 0;            
+            padding: 1px 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            letter-spacing: 0;           
         }
 
         nav ul li a:hover {
-            color: #250202ce; 
+            color: #0F0D37;
         }
 
         main {
@@ -59,6 +62,9 @@
             justify-content: center;
             align-items: center;
             width: 100%;
+            max-width: 1200px;
+            margin: auto;
+            padding: auto ;
         }
 
         section {
@@ -70,35 +76,58 @@
             border-radius: 10px;
             position: relative; 
             font-weight: 200;
-            font-family: 'Courier New', Courier, monospace;
-            text-transform: capitalize;
+            font-family: 'Roboto', sans-serif;
             font-size: 150%;
+        }
+        
+        .hAct{
+            text-align: center;
+            padding-top: 0%;
+            margin-top: 20px;
+            font-size: 55px;
+            font-weight: 300px;
+        }
+
+        .actP1 {
+            text-align: justify;
+            padding-bottom: 5px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .actP2 {
+            text-align: justify;
+            padding-bottom: 0px;
+            padding-top: 0px;
+            margin-bottom:  0% ;
+            font-family: 'Roboto', sans-serif;
         }
 
         section ul {
-            list-style: none; /* Remove default bullets */
-            padding: 0; /* Remove padding */
-            margin: 0; /* Remove margin */
+            list-style: none; 
+            padding: 0; 
+            margin: 0; /
         }
 
         section img {
-            width: 1000px; /* Set a uniform width */
-            height: 700px; /* Set a uniform height */
-            object-fit: cover; /* Maintain aspect ratio and cover the area */
-            margin: 10px 0; 
-            display: block; 
-            margin-left: auto;
-            margin-right: auto;
-        }
+            width: 100%; 
+            height: 1000px; 
+            max-width: 100%;
+            padding-left: 0%; 
+            margin: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
+            display: block; }
 
         footer {
             text-align: center;
-            padding: 0px 0;
+            padding: 0px;
+            padding-bottom: 0%;
+            margin-bottom: 0%;
             background: #0077be;
             color: #fff;
             width: 100%;
             position: relative;
-            font-size: 70%;
+            font-size: 20px;
         }
 
         @media (max-width: 768px) {
@@ -144,11 +173,13 @@
 
     <main>
         <section id="activities">
-            <h2>Activities</h2>
+            <h2 class="hAct">Activities</h2>
             <ul>
                 <li>
+                    <p class="actP1">Panacalan Island is a hidden gem that offers a delightful array of activities for every type of traveler. With its pristine beaches and stunning turquoise waters, it's the perfect destination for those seeking adventure and relaxation alike. You can dive into the inviting sea for a refreshing swim, bask in the sun on soft sandy shores, or engage in spirited games of beach volleyball under the stars. As day transitions to night, the island transforms into a vibrant social hub with bonfire parties and breathtaking sunsets that paint the sky in hues of orange and pink, creating unforgettable memories against a picturesque backdrop.</p>
+                    Swimming in turquoise waters                   
                     <img src="STW.png" alt="Swimming in turquoise waters">
-                    Swimming in turquoise waters
+                    Swimming in turquoise waters                 
                 </li>
                 <li>
                     <img src="WS.png" alt="Watching Sunset">
@@ -166,6 +197,7 @@
                     <img src="SR.png" alt="Sunbathing and Relaxing">
                     Sunbathing and relaxing
                 </li>
+                <p class="actP2"> Whether you're splashing in the crystal-clear waters, soaking up the sun, or enjoying lively evenings filled with laughter and camaraderie, Panacalan Island promises an unforgettable escape. The combination of tranquil relaxation and exciting activities makes it an ideal getaway for friends, families, or couples looking to reconnect with nature and each other. As you leave the island, the memories of sun-drenched days and starry nights will linger, inviting you to return to this enchanting paradise time and time again..</p>
             </ul>
         </section>
     </main>
