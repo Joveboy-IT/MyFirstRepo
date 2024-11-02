@@ -13,8 +13,7 @@
             height: 100%;
             width: 100%;
             font-family: 'Roboto', sans-serif;
-            padding-bottom: 0px;
-            margin-bottom: 0px;
+
         }
 
         body {
@@ -27,7 +26,7 @@
             background: #0077be;
             color: #fff;
             padding: 20px 0;
-            padding-bottom: 0px;
+            padding-bottom: 50px;
             text-align: center;
             width: 100%;
             font-family: sans-serif;
@@ -68,14 +67,13 @@
             width: 100%;
             max-width: 1200px;
             margin: auto;
-            padding: auto ;
+            padding: 0px;
         }
 
         section {
             width: 100%;
             padding: 50px 20px;
-            text-align: center;
-            background: white;
+            text-align: center;    
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
             position: relative; 
@@ -93,26 +91,17 @@
 
         .contactsP1{
             text-align: justify;
-            padding-bottom: 20px;
+            padding-bottom: 0px;
             padding-top: 0px;
             margin-bottom:  0% ;
-            
             font-family: 'Roboto', sans-serif;
         }
-
-        section img {
-            width: 100%; 
-            height: auto; 
-            max-width: 1200px; 
-            margin: 0 auto;
-            display: block; 
-            
-        }
-
         
         form {
             display: flex;
             flex-direction: column;
+            margin-bottom: 0%;
+            padding-bottom: 0%;
         }
 
         form input, form textarea {
@@ -124,7 +113,7 @@
 
         form button {
             padding: 10px;
-            background: #0077be;
+            background: #14110b;
             color: white;
             border: none;
             border-radius: 5px;
@@ -147,30 +136,40 @@
         opacity: 0;
         transform: translateY(-20px);
         transition: opacity 0.4s ease, transform 0.4s ease;
-}
+        }
 
-#popup-message.show {
-    opacity: 1;
-    transform: translateY(0);
-}
+        #popup-message.show {
+        opacity: 1;
+        transform: translateY(0);
+        }
 
-#popup-message.hidden {
-    display: none;
-}
+        #popup-message.hidden {
+        display: none;
+        }
 
+        .contactBg{
+        background-image: url('contactBG.PNG');
+        background-size: cover;
+        background-position: center;
+        padding: 20px;
+        color: black;
+        margin-bottom: 0%;
+        padding-bottom: 0%;
+        }
 
         footer {
             text-align: center;
-            padding: 0px;
-            padding-bottom: 0%;
-            margin-bottom: 0%;
             background: #0077be;
             color: #fff;
             width: 100%;
+            font-size: 5px;
+            padding: 5px 0; 
+            bottom: 0;
+            left: 0;
             position: relative;
             bottom: 0;
             left: 0;
-            font-size: 20px;
+            font-size: 15px;
         }
 
         
@@ -215,7 +214,7 @@
         </nav>
     </header>
 
-    <main>
+    <main class="contactBg">
         <section id="contact">
             <h2>Contact</h2>
             <p class="contactsP1">Our contact page is here to help you connect directly with us. Whether you have questions about Panacalan Island Sandbar, need assistance with planning your visit, or simply want to share feedback, we’d love to hear from you! Use the form below to send us a message, and we’ll do our best to respond promptly. Your thoughts and inquiries are important to us as they help us improve our site and serve you better.</p>
@@ -235,17 +234,18 @@
 
     <script>
         document.querySelector('form').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent actual form submission
+            event.preventDefault(); 
     
-            // Show the pop-up message
+           
             const popup = document.getElementById('popup-message');
             popup.classList.add('show');
             
-            // Hide the message after 3 seconds
+            
             setTimeout(() => {
                 popup.classList.remove('show');
             }, 3000);
-        });
+        }
+    );
     </script>
 
     <footer>
