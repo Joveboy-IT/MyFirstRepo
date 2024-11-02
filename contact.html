@@ -13,13 +13,14 @@
             height: 100%;
             width: 100%;
             font-family: 'Roboto', sans-serif;
+            padding-bottom: 0px;
+            margin-bottom: 0px;
         }
 
         body {
-            display: flex;
-            flex-direction: column;
-            background: #f0f0f0;
+            font-family: 'Roboto', sans-serif;
             color: #333;
+            line-height: 1.3;
         }
 
         header {
@@ -30,7 +31,8 @@
             text-align: center;
             width: 100%;
             font-family: sans-serif;
-            font-size: 35px;
+            font-size: 32px; 
+            font-weight: 700;
             
         }
 
@@ -48,13 +50,14 @@
         nav ul li a {
             color: #fff;
             text-decoration: none;
-            transition: color 0.3s ease-in;
-            letter-spacing: 0; 
+            padding: 1px 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            letter-spacing: 0;  
             
         }
 
         nav ul li a:hover {
-            color: #250202ce; 
+            color: #0F0D37; 
         }
 
         main {
@@ -63,6 +66,9 @@
             justify-content: center;
             align-items: center;
             width: 100%;
+            max-width: 1200px;
+            margin: auto;
+            padding: auto ;
         }
 
         section {
@@ -74,9 +80,24 @@
             border-radius: 10px;
             position: relative; 
             font-weight: 200;
-            font-family: 'Courier New', Courier, monospace;
-            text-transform: capitalize;
+            font-family: 'Roboto', sans-serif;
             font-size: 150%;
+        }
+        h2{
+            text-align: center;
+            padding-top: 0%;
+            margin-top: 10px;
+            font-size: 55px;
+            font-weight: 300px;
+        }
+
+        .contactsP1{
+            text-align: justify;
+            padding-bottom: 20px;
+            padding-top: 0px;
+            margin-bottom:  0% ;
+            
+            font-family: 'Roboto', sans-serif;
         }
 
         section img {
@@ -114,14 +135,42 @@
             background: #005f8a;
         }
 
+        #popup-message {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background-color: #0077be;
+        color: #fff;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        opacity: 0;
+        transform: translateY(-20px);
+        transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+#popup-message.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#popup-message.hidden {
+    display: none;
+}
+
+
         footer {
             text-align: center;
-            padding: 0px 0;
+            padding: 0px;
+            padding-bottom: 0%;
+            margin-bottom: 0%;
             background: #0077be;
             color: #fff;
             width: 100%;
             position: relative;
-            font-size: 70%;
+            bottom: 0;
+            left: 0;
+            font-size: 20px;
         }
 
         
@@ -169,6 +218,7 @@
     <main>
         <section id="contact">
             <h2>Contact</h2>
+            <p class="contactsP1">Our contact page is here to help you connect directly with us. Whether you have questions about Panacalan Island Sandbar, need assistance with planning your visit, or simply want to share feedback, we’d love to hear from you! Use the form below to send us a message, and we’ll do our best to respond promptly. Your thoughts and inquiries are important to us as they help us improve our site and serve you better.</p>
             <form action="#" method="post">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
@@ -180,6 +230,23 @@
             </form>
         </section>
     </main>
+    
+    <div id="popup-message" class="hidden">Message Sent!</div>
+
+    <script>
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent actual form submission
+    
+            // Show the pop-up message
+            const popup = document.getElementById('popup-message');
+            popup.classList.add('show');
+            
+            // Hide the message after 3 seconds
+            setTimeout(() => {
+                popup.classList.remove('show');
+            }, 3000);
+        });
+    </script>
 
     <footer>
         <p>&copy; 2024 Panacalan Island Sandbar Travel Blog. All rights reserved.</p>
