@@ -20,11 +20,9 @@ We aim to inspire adventure while promoting environmentally friendly travel prac
 
 ## 📸 Screenshots
 
-<div style="display: flex; justify-content: space-around;">
-    <img src="Home2.png" alt="Panacalan Island Image" width="300" />
-    <img src="WS.png" alt="Panacalan Island Image 2" width="300" />
-    <img src="BP.png" alt="Panacalan Island Image 3" width="300" />
-</div>
+![Panacalan Island Image](Home2.png)
+![Bonfire Night](WS.png)
+![Beach Paradise](BP.png)
   
 ---
 
@@ -33,4 +31,4 @@ We aim to inspire adventure while promoting environmentally friendly travel prac
 ### Cloning the Repository
 To get a local copy of this project, clone the repository with:
 ```bash
-git clone https://github.com/your-username/panacalan-island-sandbar.git
+git clone https://github.com/Joveboy-IT/MyFirstRepo.git
