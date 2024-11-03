@@ -20,9 +20,15 @@ We aim to inspire adventure while promoting environmentally friendly travel prac
 
 ## 📸 Screenshots
 
-<img src="home2.png" alt="Panacalan Island Image" style="width:300px; height:200px; object-fit: cover;" />
-<img src="WS.png" alt="Bonfire Night" style="width:300px; height:200px; object-fit: cover;" />
-<img src="BP.png" alt="Beach Paradise" style="width:300px; height:200px; object-fit: cover;" />
+<img src="guiRM1.png" alt="Panacalan Island Image" style="width:300px; height:200px; object-fit: cover;" />
+<img src="guiRM2.png" alt="Panacalan Island Image" style="width:300px; height:200px; object-fit: cover;" />
+<img src="guiRM3.png" alt="Panacalan Island Image" style="width:300px; height:200px; object-fit: cover;" />
+<img src="guiRM4.png" alt="Panacalan Island Image" style="width:300px; height:200px; object-fit: cover;" />
+<img src="guiRM5.png" alt="Panacalan Island Image" style="width:300px; height:200px; object-fit: cover;" />
+<img src="guiRM6.png" alt="Panacalan Island Image" style="width:300px; height:200px; object-fit: cover;" />
+<img src="guiRM7.png" alt="Panacalan Island Image" style="width:300px; height:200px; object-fit: cover;" />
+<img src="codeRM1.png" alt="Panacalan Island Image" style="width:300px; height:200px; object-fit: cover;" />
+
   
 ---
 
