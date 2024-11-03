@@ -20,7 +20,7 @@ We aim to inspire adventure while promoting environmentally friendly travel prac
 
 ## 📸 Screenshots
 
-![Panacalan Island Image](Home2.png)
+![Panacalan Island Image](home2.png)
 ![Bonfire Night](WS.png)
 ![Beach Paradise](BP.png)
   
