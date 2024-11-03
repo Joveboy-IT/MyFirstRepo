@@ -6,7 +6,7 @@
     <title>DESTINATION</title>
     <style>
        
-
+        /* Sets up the overall page style, including fonts and colors */
        html, body {
             margin: 0;
             padding: 0;
@@ -16,7 +16,7 @@
             padding-bottom: 0px;
             margin-bottom: 0px;
         }
-
+        /* Background and text styling for the main page */
         body {
             font-family: 'Roboto', sans-serif;
             line-height: 1.3;
@@ -27,7 +27,7 @@
             font-weight: bolder
         }
 
-        
+        /* Style for the top section of the page (header) */
         header {
             background-image: url('bodyBg.PNG');
             background-size: 0cqmax;
@@ -42,7 +42,7 @@
             font-weight: 700;
         }
 
-
+        /* Styling for the menu links (navigation) */
         nav ul {
             list-style: none;
             padding: 0;
@@ -53,7 +53,7 @@
             display: inline-block; 
             margin: 0 15px;
         }
-
+        /* Changes link color when hovering over them */
         nav ul li a {
             color: #fff;
             text-decoration: none;
@@ -62,11 +62,11 @@
             letter-spacing: 0; 
             
         }
-
+        
         nav ul li a:hover {
             color: #0F0D37;
         }
-
+        /* Main content area where the page content is displayed */
         main {
             flex: 1;
             display: flex;
@@ -77,7 +77,7 @@
             margin: auto;
             padding: auto ;
         }
-
+        /* Section where information about the destination is shown */
         section {
             width: 100%;
             padding: 50px 20px;
@@ -93,6 +93,7 @@
             background-size: cover;
             background-position: center;
         }
+        /* Styling for the "Destination" H-tag */
         .Hdestination{
             text-align: center;
             padding-top: 0%;
@@ -100,9 +101,9 @@
             font-size: 55px;
             font-weight: 300px;
             color: #0F0D37;
-            
-        }
 
+        }
+        /* Style for the main description text about the destination */
         .p1Destination {
             text-align: justify;
             font-size: 20px;
@@ -120,7 +121,7 @@
             font-weight: 20px;
         }
         
-
+        /* Style for images in the section */
         section img {
             width: 100%; 
             height: 1000px; 
@@ -132,7 +133,7 @@
             display: block; 
             
         }
-
+        /* Style for the footer at the bottom of the page */
         footer {
             text-align: center;
             background: #0077be;
@@ -153,7 +154,7 @@
             font-weight: bolder
         }
 
-        
+        /* Responsive styles for different screen sizes */
         @media (max-width: 768px) {
             header, footer {
                 padding: 15px;
@@ -187,6 +188,7 @@
 <body>
     <header>
         <h1>PANALACAN ISLAND SANDBAR</h1>
+        <!-- Navigation menu links to other pages on the site -->
         <nav>
             <ul>
                 <li><a href="home.html">Home</a></li>
@@ -201,14 +203,18 @@
 
     <main>
         <section id="destination">
+            <!-- Title for the destination section -->
             <h2 class="Hdestination">Destination</h2>
+            <!-- Main description of the destination -->
             <p class="p1Destination">Panacalan Island, a secluded sandbar in the center of Pangasinan, provides a peaceful retreat surrounded by crystal-clear waters and diverse marine life. As shown on the map, Panacalan Island is only a short boat trip from the Macaleeng Port Area, making it easily accessible while also seeming like a private haven. The island is not only a beautiful place to rest, but it also houses a fish sanctuary, which allows tourists to snorkel and explore underwater. This site is ideal for nature lovers seeking to immerse themselves in Pangasinan's natural beauty, with local attractions such as Quezon Island Beach and the Imelda Cave on Marcos Island adding to the adventure. A visit to Panacalan Island promises stunning views, a tranquil atmosphere, and a taste of Pangasinan's natural beauty.</p>
+            <!-- Images showcasing Panacalan Island -->
             <img src="destination1.png" alt="Panacalan Island Image">
             <img src="destination2.png" alt="Panacalan Island Image">
+            <!-- Additional information about the destination -->
             <p class="p2Destination">Panacalan Island, with its gorgeous white sands and brilliant turquoise waters, is a great destination for those seeking peace and solitude in Pangasinan. Visitors have rated the island 4.6 stars for its scenic sandbar and breathtaking views, making it ideal for a relaxing beach day or an active island-hopping trip. The overhead map emphasizes the island's distinctive shape and remote location, with only a limited link to the nearby reefs. Visitors frequently laud the stunning sunsets and the opportunity to observe abundant marine life up close, making Panacalan Island a must-see for both beachgoers and wildlife aficionados.</p>
         </section>
     </main>
-
+     <!-- Footer information -->        
     <footer>
         <p>&copy; 2024 Panacalan Island Sandbar Travel Blog. All rights reserved.</p>
     </footer>

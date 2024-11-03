@@ -1,12 +1,16 @@
+<!-- Defines the document type as HTML5 and sets the primary language to English -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--Character encoding and viewport setting-up for mobile responsiveness -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Appear on the browser tab (Tittle of Page) -->
     <title>HOME</title>
+    <!-- Internal CSS styling -->
     <style>
        
-
+        /* Global settings: Resets padding, margins, and applies font family */
         html, body {
             margin: 0;
             padding: 0;
@@ -16,7 +20,7 @@
             padding-bottom: 0px;
             margin-bottom: 0px;
         }
-
+        /* Body settings: background image, text color, and font weight */
         body {
             font-family: 'Roboto', sans-serif;
             line-height: 1.3;
@@ -27,7 +31,7 @@
             font-weight: bolder
         }
 
-        
+        /* Header styling: background, color, padding, and alignment */
         header {            
             background-image: url('bodyBg.PNG');
             background-size: 0cqmax;
@@ -42,18 +46,18 @@
             font-weight: 700;
             
         }
-
+        /* Navigation list: removes bullet points and sets zero padding/margins */
         nav ul {
             list-style: none;
             padding: 0;
             margin: 0; 
         } 
-
+        /* Navigation item styling: inline layout and spacing */
         nav ul li {
             display: inline-block; 
             margin: 0 15px;
         }
-
+        /* Navigation links: color, padding, and hover effect */
         nav ul li a {
             color: #fff;
             text-decoration: none;
@@ -62,11 +66,11 @@
             letter-spacing: 0; 
             
         }
-
+        /* Hover effect for navigation links */
         nav ul li a:hover {
             color: #0F0D37;
         }
-
+        /* Main section settings: centers content and sets maximum width */
         main {
             flex: 1;
             display: flex;
@@ -77,7 +81,7 @@
             margin: auto;
             padding: auto ;
         }
-
+        /* Section styling: text alignment, background, and layout */
         section {
             width: 100%;
             padding: 50px 20px;
@@ -94,6 +98,7 @@
             background-position: center;
 
         }
+        /* Welcome heading (h2) styling */
         .sWelcome{
             text-align: center;
             padding-top: 0%;
@@ -103,7 +108,7 @@
             color: #d6d5f1;
             
         }
-
+        /* Styling for introductory paragraphs */
         .homeP1 {
             text-align: justify;
             font-size: 20px;
@@ -111,6 +116,7 @@
             margin-top: 0px;
             font-weight: 20px;
         }
+        
         .homeP2 {
             text-align: justify;
             font-size: 20px;
@@ -120,6 +126,7 @@
             margin-bottom: 0%;
             font-weight: 20px;
         }
+        /* Paragraph styling for highlighted welcome text */
         .HwelcomeP {
             text-align: center;
             font-size: 30px;
@@ -129,7 +136,7 @@
             color: #0F0D37;
             
         }
-        
+        /* Styling for images within the main content section */
         section img {
             width: 100%; 
             height: 1000px; 
@@ -141,7 +148,7 @@
             display: block; 
             
         }
-
+        /* Footer styling: background color, text color, and alignment */
         footer {
             text-align: center;
             background: #0077be;
@@ -160,10 +167,8 @@
             background-position: center;
             color: #0F0D37;
             font-weight: bolder
-        }
-
-        
-
+        }        
+        /* Tablet responsive styling */
         @media (max-width: 768px) {
             header, footer {
                 padding: 15px;
@@ -177,7 +182,7 @@
                 margin: 0 10px;
             }
         }
-
+        /* Mobile responsive styling */
         @media (max-width: 480px) {
             nav ul li {
                 display: block;
@@ -191,10 +196,12 @@
     </style>
 </head>
 <body>
+    <!-- Header: Displays the website title and main navigation menu -->
     <header>
         <h1>PANALACAN ISLAND SANDBAR</h1>
         <nav>
             <ul>
+            <!-- Navigation links to other sections of the website -->
                 <li><a href="home.html">Home</a></li>
                 <li><a href="destination.html">Destination</a></li>
                 <li><a href="activities.html">Activities</a></li>
@@ -203,7 +210,7 @@
             </ul>
         </nav>
     </header>
-
+    <!-- Main content section: Welcome message and introductory paragraphs with images -->
     <main>
         <section id="home">
             <h2 class="sWelcome">WELCOME TO PANACALAN ISLAND SANDBAR</h2>
@@ -224,7 +231,7 @@
                 marine life that have made Panacalan Island Sandbar a must-see trip.</p>
         </section>
     </main>
-
+    <!-- Footer: Displays copyright information -->
     <footer>
         <p>&copy; 2024 Panacalan Island Sandbar Travel Blog. All rights reserved.</p>
     </footer>

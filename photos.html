@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PHOTOS</title>
     <style>
+        /* Styling for page structure, fonts, and body background */
         html, body {
             margin: 0;
             padding: 0;
@@ -24,7 +25,7 @@
             color: #b2c7e4;
             font-weight: bolder
         }
-
+         /* Header styling for website title and navigation */
         header {
             background-image: url('bodyBg.PNG');
             background-size: 0cqmax;
@@ -38,7 +39,7 @@
             font-size: 32px; 
             font-weight: 700;
         }
-
+        /* Navigation styling within header */
         nav ul {
             list-style: none;
             padding: 0;
@@ -61,7 +62,7 @@
         nav ul li a:hover {
             color: #0F0D37;
         }
-
+        /* Main content styling for layout and background */
         main {
             flex: 1;
             display: flex;
@@ -72,7 +73,7 @@
             margin: auto;
             padding: auto ;
         }
-
+        /* Section for photos and descriptions */
         section {
             width: 100%;
             padding: 50px 20px;
@@ -88,6 +89,7 @@
             background-size: cover;
             background-position: center;
         }
+        /* Style for welcome message */
         h2 {
             text-align: center;
             padding-top: 0%;
@@ -96,7 +98,7 @@
             font-weight: 300px;
             color: #0F0D37;
         }
-
+        /* Styling for gallery text paragraphs */
         .secP1{
             text-align: justify;
             font-size: 20px;
@@ -114,15 +116,13 @@
             font-weight: 20px;
             font-family: 'Roboto', sans-serif;
         }
-
-
+        /* Gallery image layout */
         .activity-gallery {
             display: flex;
             justify-content: center;
             flex-wrap: wrap; 
         }
-
-       
+        /* Image size and layout for the gallery */
         section img {
             width: 100%; 
             height: 1000px; 
@@ -132,7 +132,7 @@
             margin-left: 0px;
             margin-right: 0px;
             display: block; }
-
+        /* Footer with copyright text */
         footer {
             text-align: center;
             background: #0077be;
@@ -152,7 +152,7 @@
             color: #0F0D37;
             font-weight: bolder
         }
-
+        /* Responsive styling for smaller screens */
         @media (max-width: 768px) {
             header, footer {
                 padding: 15px;
@@ -180,10 +180,12 @@
     </style>
 </head>
 <body>
+    <!-- Header section: Displays the website title and main navigation menu -->
     <header>
         <h1>PANALACAN ISLAND SANDBAR</h1>
         <nav>
             <ul>
+                <!-- Navigation links to different sections/pages of the website -->
                 <li><a href="home.html">Home</a></li>
                 <li><a href="destination.html">Destination</a></li>
                 <li><a href="activities.html">Activities</a></li>
@@ -193,11 +195,13 @@
             </ul>
         </nav>
     </header>
-
+    <!-- Main content section for the Photos page -->
     <main>
         <section id="photos">
             <h2>PHOTOS</h2>
+            <!-- Introductory paragraph describing the photo gallery -->
             <p class="secP1"> Welcome to the photo gallery of Panacalan Island Sandbar, where each image tells a story of this stunning destination’s beauty and charm. Here, you’ll get a glimpse of the island’s turquoise waters, golden sunsets, and lively gatherings that bring visitors together. Whether you’re planning a quiet escape or an adventurous day with friends, these photos showcase the variety of experiences awaiting you. From relaxing on the sand to playing beach games or watching the sunset by a bonfire, let these snapshots inspire your own island getaway.</p>
+            <!-- Photo gallery section with images and captions -->
             <div class="activity-gallery">
                 <img src="home1.png" alt="Panacalan Island Image">
                 <img src="home2.png" alt="Panacalan Island Image">
@@ -205,12 +209,13 @@
                 <img src="BP.png" alt="Bonfire Party">
                 <img src="LNBV.png" alt="Late Night Beach Volleyball">
                 <img src="SR.png" alt="Sunbathing and Relaxing">
+                <!-- Additional description for each image, providing context and details about each experience -->
                 <p class="secP2"> The photos on this page highlight the unique charm and variety of experiences at Panacalan Island Sandbar. The first image reveals the sandbar's crystal-clear waters and gentle waves, a perfect spot for swimming or simply admiring the vast ocean views. The second photo showcases the iconic stretch of white sand surrounded by endless blue skies, inviting visitors to stroll and enjoy the pristine shoreline. In the third picture, a breathtaking sunset paints the sky in warm orange hues, creating a magical setting for evening relaxation.
                     The fourth image captures a cozy nighttime gathering around a bonfire, where friends can unwind, share stories, and enjoy the sound of the waves under a starlit sky. Moving on, the fifth photo shows a lively beach volleyball game, embodying the fun and social atmosphere that many enjoy at Panacalan Island Sandbar. Lastly, the sixth picture captures pure relaxation, with a visitor lounging in a beach chair, facing the turquoise waters and basking in the tranquility of the surroundings. Each photo represents a different way to experience the sandbar, from adventure and social moments to peaceful solitude.</p>
             </div>
         </section>
     </main>
-
+    <!-- Footer section information -->
     <footer>
         <p>&copy; 2024 Panacalan Island Sandbar Travel Blog. All rights reserved.</p>
     </footer>

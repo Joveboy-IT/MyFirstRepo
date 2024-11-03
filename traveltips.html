@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TRAVEL TIPS</title>
     <style>
+        /* Global settings for padding, margin, and font */
         html, body {
             margin: 0;
             padding: 0;
@@ -14,7 +15,7 @@
             padding-bottom: 0px;
             margin-bottom: 0px;
         }
-
+        /* Main body styling including background image, font color, and font weight */
         body {
             font-family: 'Roboto', sans-serif;
             line-height: 1.3;
@@ -24,7 +25,7 @@
             color: #b2c7e4;
             font-weight: bolder
         }
-
+        /* Header styling with background image, text alignment, and font properties */
         header {
             background-image: url('bodyBg.PNG');
             background-size: 0cqmax;
@@ -38,18 +39,18 @@
             font-size: 32px; 
             font-weight: 700;
         }
-
+        /* Navigation styling for menu items within the header */
         nav ul {
             list-style: none;
             padding: 0;
             margin: 0; 
         } 
-
+        /* Individual menu item display and spacing */
         nav ul li {
             display: inline-block; 
             margin: 0 15px;
         }
-
+        /* Styling for menu links */
         nav ul li a {
             color: #fff;
             text-decoration: none;
@@ -57,11 +58,11 @@
             transition: background-color 0.3s ease, color 0.3s ease;
             letter-spacing: 0; 
         }
-
+        /* Hover effect for navigation links */
         nav ul li a:hover {
             color: #0F0D37;
         }
-
+        /* Main container styling for centering content */
         main {
             flex: 1;
             display: flex;
@@ -72,7 +73,7 @@
             margin: auto;
             padding: auto 
         }
-
+        /* Styling for the main content section */
         section {
             width: 100%;
             padding: 50px 20px;
@@ -88,7 +89,7 @@
             background-size: cover;
             background-position: center;
         }
-
+        /* Title styling for the travel tips section */
         h2 {
             text-align: center;
             padding-top: 0%;
@@ -97,7 +98,7 @@
             font-weight: 300px;
             color: #0F0D37;
         }
-
+        /* Styling for different paragraph sections within travel tips */
         .secP1 {
             text-align: justify;
             padding-bottom: 0px;
@@ -137,35 +138,35 @@
             margin-bottom:  0% ;
             font-family: 'Roboto', sans-serif;
         }
-
+        /* Removes bullet points and extra padding for unordered lists in section */
         section ul {
             list-style: none;
             padding: 0;
             margin: 0;
         }
-
+        /* Adds spacing for each list item */
         section li {
             margin: 40px 0;
         }
-
+        /* Styling for titles above images in travel tips */
         .text-above {
             font-size: 2rem;
             font-weight: bold;
             color:#0F0D37;
             margin-bottom: 10px;
         }
-
+        /* Image container styling for displaying images */
         .img-container {
             display: inline-block;
         }
-
+        /* Image settings: size, border-radius, and fitting */
         .img-container img {
             width: 1200px;
             height: 600px;
             object-fit: cover;
             border-radius: 10px;
         }
-
+        /* Footer styling with background image, font size, and text color */
         footer {
             text-align: center;
             background: #0077be;
@@ -185,7 +186,7 @@
             color: #0F0D37;
             font-weight: bolder
         }
-
+        /* Responsive styling for tablets */
         @media (max-width: 768px) {
             header, footer {
                 padding: 15px;
@@ -208,7 +209,7 @@
                 font-size: 1.5rem;
             }
         }
-
+        /* Responsive styling for mobile screens */
         @media (max-width: 480px) {
             nav ul li {
                 display: block;
@@ -231,10 +232,12 @@
     </style>
 </head>
 <body>
+     <!-- Header section: displays the website title and main navigation menu -->
     <header>
         <h1>PANALACAN ISLAND SANDBAR</h1>
         <nav>
             <ul>
+                <!-- Navigation links for different sections of the website -->
                 <li><a href="home.html">Home</a></li>
                 <li><a href="destination.html">Destination</a></li>
                 <li><a href="activities.html">Activities</a></li>
@@ -244,11 +247,12 @@
             </ul>
         </nav>
     </header>
-
+     <!-- Main section for displaying travel tips content -->
     <main>
         <section id="travel-tips">
             <h2>Travel Tips</h2>
             <ul>
+                <!-- List item containing a tip, description, and image -->
                 <li>
                     <div class="text-above">Best time to visit: November to April</div>
                     <p class="secP1">The best time to visit Panacalan Island Sandbar is from November to April. During these months, the weather is typically clear, with calm seas and pleasant breezes. This period falls within the dry season, offering ideal conditions for beach activities, swimming, and enjoying the sandbar's stunning natural beauty.</p>
@@ -284,10 +288,11 @@
                         <img src="CW.png" alt="Check weather">
                     </div>
                 </li>
+                <!-- Additional travel tips continue here, each with its own title, paragraph, and image -->
             </ul>
         </section>
     </main>
-
+    <!-- Footer section with copyright notice -->
     <footer>
         <p>&copy; 2024 Panacalan Island Sandbar Travel Blog. All rights reserved.</p>
     </footer>
